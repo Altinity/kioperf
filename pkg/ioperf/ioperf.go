@@ -310,7 +310,6 @@ func s3Read(bucket string, path string, downloader *s3manager.Downloader) Result
 		Key:    aws.String(path),
 	})
 	end := time.Now()
-	fmt.Println(c, numBytes)
 	result.Duration = millis64(end.Sub(start))
 	if err == nil {
 		result.Bytes = numBytes

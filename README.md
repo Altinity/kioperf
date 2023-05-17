@@ -22,6 +22,8 @@ Test performance of reading from a collection of 10 files 100 times in total.
 
 Test performance of writing 10 25MiB files to object storage using three threads. Files will be written to s3://my-own-us-west-2-playground-1/ioperf/. 
 ```
+export AWS_ACCESS_KEY_ID="access key string"
+export AWS_SECRET_ACCESS_KEY="secret key string"
 ./ioperf s3 --operation=write --bucket=my-own-us-west-2-playground-1 \
  --prefix=ioperf/ --size 25 --threads=3 --iterations=10 --files=10
 ```
