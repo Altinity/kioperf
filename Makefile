@@ -1,8 +1,8 @@
 .PHONY: all
-all: ioperf
+all: kioperf
 
-ioperf: cmd/*.go pkg/*/*.go Makefile go.mod go.sum
-	go build cmd/ioperf.go
+kioperf: cmd/*.go pkg/*/*.go Makefile go.mod go.sum
+	go build cmd/kioperf.go
 
 fmt: cmd/*.go pkg/*/*.go
 	go fmt cmd/*.go
@@ -18,5 +18,5 @@ dependencies:
 	go mod download
 
 clean:
-	rm -f ioperf
+	rm -f kioperf
 	rm -rf test

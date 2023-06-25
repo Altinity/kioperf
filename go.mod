@@ -1,4 +1,4 @@
-module github.com/hodgesrm/ioperf
+module github.com/hodgesrm/kioperf
 
 go 1.19
 
