@@ -22,3 +22,6 @@ jobs:
 
     - name: Build
       run: make kioperf
+
+    - name: Smoke Test
+      run: test/smoke.sh
