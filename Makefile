@@ -8,8 +8,8 @@ fmt: cmd/*.go pkg/*/*.go
 	go fmt cmd/*.go
 	go fmt pkg/*/*.go
 
-#test: .PHONY
-#        go test internal/database/database_test.go -v
+test: .PHONY
+	test/smoke.sh
 
 tidy:
 	go mod tidy
